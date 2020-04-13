@@ -1,7 +1,7 @@
 #!/bin/bash
 # Submit an image to RedHat Sysfow Exporter Jobs for certification
 # Usage: redhat_scan_submit.sh [login secret] [image_to_be_scanned] [RedHat project ID] [container label]
-set -e
+set -ex
 
 docker login -u unused -p $1 scan.connect.redhat.com
 
